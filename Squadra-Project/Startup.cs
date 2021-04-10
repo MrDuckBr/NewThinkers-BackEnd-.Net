@@ -51,6 +51,8 @@ namespace Squadra_Project
 
             services.AddScoped<IAdicionarCarroAdapter, AdicionarCarroAdapter>();
             services.AddScoped<IAtualizarCarroAdapter, AtualizarCarroAdapter>();
+            services.AddScoped<ICarroParaResponseAdapter, CarroParaResponseAdapter>();
+            services.AddScoped<IConverterListaCarroParaListaResponseAdapter, ConverterListaCarroParaListaResponseAdapter>();
 
             services.AddControllers();
 

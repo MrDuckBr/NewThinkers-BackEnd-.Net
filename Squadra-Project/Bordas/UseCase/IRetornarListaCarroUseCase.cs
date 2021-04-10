@@ -8,6 +8,6 @@ namespace Squadra_Project.UseCase
 {
     public interface IRetornarListaCarroUseCase
     {
-        RetornarListaCarroResponse Executar(RetornarListaCarroRequest request);
+        List<RetornarListaCarroResponse> Executar();
     }
 }

@@ -14,5 +14,10 @@ namespace Squadra_Project.Repositorios
         public void Remove(int id);
 
         public bool AtualizarCarro(Carro novoCarro);
+
+        public Carro getById(int id);
+
+        public List<Carro> RetornarListaCarro();
+        
     }
 }

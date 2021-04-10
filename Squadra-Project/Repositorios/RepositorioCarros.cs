@@ -45,5 +45,15 @@ namespace Squadra_Project.Repositorios
             _local.SaveChanges();
             return true;
         }
+
+        public Carro getById(int id)
+        {
+            return _local.carro.Where(d => d.id == id).FirstOrDefault();
+        }
+
+        public List<Carro> RetornarListaCarro()
+        {
+            return _local.carro.ToList();
+        }
     }
 }
