@@ -8,8 +8,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Squadra_Project.Adapter;
+using Squadra_Project.Bordas.Adapter;
 using Squadra_Project.Context;
+using Squadra_Project.Repositorios;
 using Squadra_Project.Services;
+using Squadra_Project.UseCase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +38,19 @@ namespace Squadra_Project
             (Configuration.GetConnectionString("urlSquadra")));
 
             services.AddScoped<ICarroService, CarroService>();
+
+
+            services.AddScoped<IAdicionarCarroUseCase, AdicionarCarroUseCase>();
+            services.AddScoped<IAtualizarCarroUseCase, AtualizarCarroUseCase>();
+            services.AddScoped<IRemoverCarroUseCase, RemoverCarroUseCase>();
+            services.AddScoped<IRetornarCarroPorIdUseCase, RetornarCarroPorIdUseCase>();
+            services.AddScoped<IRetornarListaCarroUseCase, RetornarListaCarroUseCase>();
+
+
+            services.AddScoped<IRepositorioCarros, RepositorioCarros>();
+
+            services.AddScoped<IAdicionarCarroAdapter, AdicionarCarroAdapter>();
+            services.AddScoped<IAtualizarCarroAdapter, AtualizarCarroAdapter>();
 
             services.AddControllers();
 
