@@ -53,6 +53,7 @@ namespace Squadra_Project.Repositorios
 
         public List<Carro> RetornarListaCarro()
         {
+
             return _local.carro.ToList();
         }
     }

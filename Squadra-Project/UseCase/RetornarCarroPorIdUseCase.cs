@@ -25,11 +25,16 @@ namespace Squadra_Project.UseCase
             try
             {
                 var carro = _repositorioCarros.getById(request.id);
+                if(carro == null)
+                {
+                    return response;
+                }
                 response = _adapter.transformaCarroResponse(carro);
                 return response;
             }
             catch
             {
+                response.nome = "entrei aqui";
                 return response;
 
             }

@@ -15,6 +15,7 @@ namespace Squadra_Project.DTO.Carro.RetornarListaDeCarro
         public string cor { get; set; }
 
         public int valor { get; set; }
+        
 
 
     }

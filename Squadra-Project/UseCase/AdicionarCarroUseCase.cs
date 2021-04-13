@@ -24,6 +24,12 @@ namespace Squadra_Project.UseCase
             var response = new AdicionarCarroResponse();
             try {
                 
+                if(request.valor <= 0)
+                {
+                    response.msg = "Valor Invalido";
+                    return response;
+                }
+
                 var CarroAdicionar = _adapter.converterRequestParaCarro(request);
                 _repositorioCarros.Add(CarroAdicionar);
                 response.msg = "Adicionado com Sucesso";

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squadra-Project", "Squadra-Project\Squadra-Project.csproj", "{BB628339-7876-47E1-88AE-48D6002089A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squadra-Project", "Squadra-Project\Squadra-Project.csproj", "{BB628339-7876-47E1-88AE-48D6002089A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squadra-Project.Teste", "Squadra-Project.Teste\Squadra-Project.Teste.csproj", "{5BA7D929-D9E2-4639-AC88-6C035E105087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BB628339-7876-47E1-88AE-48D6002089A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB628339-7876-47E1-88AE-48D6002089A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB628339-7876-47E1-88AE-48D6002089A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BA7D929-D9E2-4639-AC88-6C035E105087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BA7D929-D9E2-4639-AC88-6C035E105087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BA7D929-D9E2-4639-AC88-6C035E105087}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BA7D929-D9E2-4639-AC88-6C035E105087}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

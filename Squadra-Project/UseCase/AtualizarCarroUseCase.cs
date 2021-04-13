@@ -25,6 +25,11 @@ namespace Squadra_Project.UseCase
 
             try
             {
+                if(request.valor <= 0)
+                {
+                    response.msg = "Valor Invalido";
+                    return response;
+                }
 
                 var CarroAtualizar = _adapter.transformaRequestEmCarro(request);
                 _repositorioCarros.AtualizarCarro(CarroAtualizar);

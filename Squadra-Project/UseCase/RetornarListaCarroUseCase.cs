@@ -26,12 +26,14 @@ namespace Squadra_Project.UseCase
             try
             {
                 var carro = _repositorioCarros.RetornarListaCarro();
+                
                 response = _adater.converterCarroListaParaListaResponse(carro);
                 return response;
             }
             catch
             {
-                return response;
+                throw new System.Exception("Requisição não pode ser feita");
+               
             }
         }
     }

@@ -7,6 +7,6 @@ namespace Squadra_Project.DTO.Carro.RemoverCarro
 {
     public class RemoverCarroResponse
     {
-        public string msg;
+        public string msg { get; set; }
     }
 }

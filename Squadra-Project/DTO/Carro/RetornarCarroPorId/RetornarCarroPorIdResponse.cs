@@ -15,5 +15,7 @@ namespace Squadra_Project.DTO.Carro.RetornarCarroPorId
 
         public int valor { get; set; }
 
+        
+
     }
 }

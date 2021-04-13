@@ -26,9 +26,9 @@ namespace Squadra_Project.UseCase
                 response.msg = "Removido com sucesso";
                 return response;
             }
-            catch
+            catch (Exception e)
             {
-                response.msg = "Falha ao remover";
+                response.msg = "Falha ao remover o carro";
                 return response;
             }
 
